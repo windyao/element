@@ -124,7 +124,7 @@
               ? parent.renderContent.call(parent._renderProxy, h, { _self: tree.$vnode.context, node, data, store })
               : tree.$scopedSlots.default
                 ? tree.$scopedSlots.default({ node, data })
-                : <span class="el-tree-node__label">{ node.label }</span>
+                : <span class={'el-tree-node__label el-tree-node__' + (node.type || 'default')}>{ node.label }</span>
           );
         }
       }
