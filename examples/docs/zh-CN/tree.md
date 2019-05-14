@@ -16,18 +16,23 @@
       return {
         data: [{
           label: '一级 1',
+          type: 'danger',
           children: [{
             label: '二级 1-1',
+            type: 'warning',
             children: [{
               label: '三级 1-1-1'
             }]
           }]
         }, {
           label: '一级 2',
+          type: 'danger',
           children: [{
             label: '二级 2-1',
+            type: 'danger',
             children: [{
-              label: '三级 2-1-1'
+              label: '三级 2-1-1',
+              type: 'danger'
             }]
           }, {
             label: '二级 2-2',

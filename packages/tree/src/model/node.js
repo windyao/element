@@ -158,6 +158,11 @@ export default class Node {
     return getPropertyFromData(this, 'label');
   }
 
+  // 增加节点的类型: warning, danger
+  get type() {
+    return getPropertyFromData(this, 'type');
+  }
+
   get key() {
     const nodeKey = this.store.key;
     if (this.data) return this.data[nodeKey];

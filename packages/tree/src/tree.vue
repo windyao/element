@@ -112,6 +112,7 @@
           return {
             children: 'children',
             label: 'label',
+            type: 'type',
             disabled: 'disabled'
           };
         }
