@@ -45,7 +45,10 @@
       </el-checkbox>
       <span
         v-if="node.loading"
-        class="el-tree-node__loading-icon el-icon-loading">
+        :class="[
+          'el-tree-node__loading-icon',
+          'el-icon-loading'
+        ]">
       </span>
       <node-content :node="node"></node-content>
     </div>
